@@ -14,11 +14,20 @@ class Extension implements ExtensionInterface
     protected bool $protected;
     private Registry $params;
 
-    public function __construct(int $id, string $name, string $title, bool $status, bool $protected)
+    /**
+     * @param int $id
+     * @param string $name
+     * @param string $title
+     * @param bool $status
+     * @param Registry $params
+     * @param bool $protected
+     */
+    public function __construct(int $id, string $name, string $title, bool $status, Registry $params, bool $protected = false)
     {
         $this->id = $id;
         $this->name = $name;
         $this->title = $title;
+        $this->params = $params;
         $this->status = $status;
         $this->protected = $protected;
     }
@@ -54,6 +63,11 @@ class Extension implements ExtensionInterface
     public function getId(): int
     {
         return $this->id;
+    }
+
+    public function getParams(): Registry
+    {
+        return $this->params;
     }
 
     public function isProtected(): bool
