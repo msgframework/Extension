@@ -22,7 +22,7 @@ class Extension implements ExtensionInterface
      * @param Registry $params
      * @param bool $protected
      */
-    public function __construct(int $id, string $name, string $title, bool $status, Registry $params, bool $protected = false)
+    public function __construct(int $id, string $name, string $title, Registry $params, bool $status, bool $protected = false)
     {
         $this->id = $id;
         $this->name = $name;
