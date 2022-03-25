@@ -10,5 +10,6 @@ interface ExtensionInterface
     public function getTitle() : string;
     public function getParams() : Registry;
     public function getId() : int;
+    public function isProtected() : bool;
     public function getStatus() : bool;
 }
