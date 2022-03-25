@@ -1,9 +1,9 @@
 <?php
 
-namespace RocketCMS\Lib\Extension;
+namespace Msgframework\Lib\Extension;
 
 use Msgframework\Lib\Registry\Registry;
-use RocketCMS\Lib\Extension\Exception\ExtensionPropertyException;
+use Msgframework\Lib\Extension\Exception\ExtensionPropertyException;
 
 class Extension implements ExtensionInterface
 {

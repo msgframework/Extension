@@ -1,6 +1,6 @@
 <?php
 
-namespace RocketCMS\Lib\Extension;
+namespace Msgframework\Lib\Extension;
 
 interface ExtensionInterface
 {
