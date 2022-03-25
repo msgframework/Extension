@@ -1,0 +1,21 @@
+{
+  "name": "msgframework/extension",
+  "description": "description",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "MSGroupFM",
+      "email": "admin@msgru.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Msgframework\\Lib\\Extension\\": "",
+      "Msgframework\\Lib\\Extension\\Exception\\": "/Exception"
+    }
+  },
+  "require": {
+    "php": ">=7.4",
+    "msgframework/registry": "^1.0"
+  }
+}

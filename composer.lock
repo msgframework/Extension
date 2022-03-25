@@ -1,0 +1,65 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "fcdc8f41771428843f83490f04f809f0",
+    "packages": [
+        {
+            "name": "msgframework/registry",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/msgframework/registry.git",
+                "reference": "bf2a080829ef0d1018c94390047b9f610895d340"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/msgframework/registry/zipball/bf2a080829ef0d1018c94390047b9f610895d340",
+                "reference": "bf2a080829ef0d1018c94390047b9f610895d340",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4"
+            },
+            "require-dev": {
+                "ext-json": "*",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Msgframework\\Lib\\Registry\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "MSGroupFM",
+                    "email": "admin@msgru.com"
+                }
+            ],
+            "description": "The Registry package provides an indexed key-value data store and an API for importing/exporting this data to several formats.",
+            "support": {
+                "issues": "https://github.com/msgframework/registry/issues",
+                "source": "https://github.com/msgframework/registry/tree/v1.0.2"
+            },
+            "time": "2022-01-10T12:19:41+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=7.4"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "2.2.0"
+}
