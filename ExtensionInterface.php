@@ -6,10 +6,13 @@ use Msgframework\Lib\Registry\Registry;
 
 interface ExtensionInterface
 {
-    public function getName() : string;
-    public function getTitle() : string;
-    public function getParams() : Registry;
-    public function getId() : int;
-    public function isProtected() : bool;
-    public function getStatus() : bool;
+    public function getName(): string;
+
+    public function getTitle(): string;
+
+    public function getParams(): Registry;
+
+    public function isProtected(): bool;
+
+    public function getStatus(): bool;
 }
