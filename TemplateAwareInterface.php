@@ -2,7 +2,7 @@
 
 namespace Msgframework\Lib\Extension;
 
-interface TemplateInterface extends ExtensionInterface
+interface TemplateAwareInterface extends ExtensionAwareInterface
 {
     /**
      * Returns the path to the root directory of the Template.

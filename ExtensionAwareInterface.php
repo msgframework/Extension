@@ -4,7 +4,7 @@ namespace Msgframework\Lib\Extension;
 
 use Msgframework\Lib\Registry\Registry;
 
-interface ExtensionInterface
+interface ExtensionAwareInterface
 {
     public function getName(): string;
 

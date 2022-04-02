@@ -5,30 +5,23 @@ namespace Msgframework\Lib\Extension;
 use Msgframework\Lib\Registry\Registry;
 use Msgframework\Lib\Extension\Exception\ExtensionPropertyException;
 
-class Extension implements ExtensionInterface
+class Extension implements ExtensionAwareInterface
 {
-    private string $title;
-    private string $name;
-    private int $id;
-    protected bool $status;
-    protected bool $protected;
-    private Registry $params;
+    use ExtensionAwareTrait;
 
     /**
-     * @param int $id
      * @param string $name
      * @param string $title
      * @param bool $status
      * @param Registry $params
      * @param bool $protected
      */
-    public function __construct(int $id, string $name, string $title, Registry $params, bool $status, bool $protected = false)
+    public function __construct(string $name, string $title, Registry $params, bool $status, bool $protected = false)
     {
-        $this->id = $id;
-        $this->name = $name;
-        $this->title = $title;
-        $this->params = $params;
-        $this->status = $status;
+        $this->setName($name);
+        $this->setTitle($title);
+        $this->setParams($params);
+        $this->setStatus($status);
         $this->protected = $protected;
     }
 
@@ -48,35 +41,5 @@ class Extension implements ExtensionInterface
         }
 
         return $this->$method();
-    }
-
-    public function getName(): string
-    {
-        return $this->name;
-    }
-
-    public function getTitle(): string
-    {
-        return $this->title;
-    }
-
-    public function getId(): int
-    {
-        return $this->id;
-    }
-
-    public function getParams(): Registry
-    {
-        return $this->params;
-    }
-
-    public function isProtected(): bool
-    {
-        return $this->protected;
-    }
-
-    public function getStatus(): bool
-    {
-        return ($this->protected) ? true : $this->status;
     }
 }
