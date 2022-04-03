@@ -118,6 +118,6 @@ trait ExtensionAwareTrait
      */
     public function getStatus(): bool
     {
-        return $this->isProtected() ?? $this->status;
+        return $this->isProtected() ? true : $this->status;
     }
 }
