@@ -25,7 +25,7 @@ trait ExtensionAwareTrait
      */
     public function setName(string $name): self
     {
-        $this->title = $name;
+        $this->name = $name;
 
         return $this;
     }
