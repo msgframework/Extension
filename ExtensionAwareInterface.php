@@ -8,6 +8,8 @@ interface ExtensionAwareInterface
 {
     public function getName(): string;
 
+    public function getType(): string;
+
     public function getTitle(): string;
 
     public function getParams(): Registry;

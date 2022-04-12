@@ -12,6 +12,7 @@ trait ExtensionAwareTrait
 {
     protected string $title;
     protected string $name;
+    protected string $type = 'unknown';
     protected bool $status;
     protected bool $protected;
     protected Registry $params;
@@ -38,6 +39,16 @@ trait ExtensionAwareTrait
     public function getName(): string
     {
         return $this->name;
+    }
+
+    /**
+     * Get the Extension type
+     *
+     * @return string
+     */
+    public function getType(): string
+    {
+        return $this->type;
     }
 
     /**
